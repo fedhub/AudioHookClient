@@ -1,0 +1,9 @@
+html, body{
+  @include size(100%, 100%);
+}
+*{
+  margin: 0;
+}
+.wrapper{
+  @include size(100%, 100%);
+}
