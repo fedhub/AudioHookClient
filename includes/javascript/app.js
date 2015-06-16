@@ -1,4 +1,7 @@
-var app = angular.module('myapp', []);
+var app = angular.module('myapp', [
+    'myapp.splash-screen',
+    'myapp.intro'
+]);
 
 //var base_url = 'http://audiohook.herokuapp.com';
 var base_url = 'http://localhost:3000';
@@ -6,50 +9,25 @@ var base_url = 'http://localhost:3000';
 app.config(['$routeProvider', function($routeProvider){
 
     $routeProvider
-        .when('/home',{
-            templateUrl: 'partials/home.html',
-            controller: 'home',
+        .when('/',{
+            templateUrl: 'partials/splash-screen.html',
+            controller: 'splash-screen',
             resolve: { resolvedVal: function(){ return; }}}
-    )
-        .when('/last-orders',{
-            templateUrl: 'partials/orders/last-orders.html',
-            controller: 'last-orders',
+        )
+        .when('/intro1',{
+            templateUrl: 'partials/intro1.html',
+            controller: 'intro',
             resolve: { resolvedVal: function(){ return; }}}
-    )
-        .when('/orders-library',{
-            templateUrl: 'partials/orders/orders-library.html',
-            controller: 'orders-library',
+        )
+        .when('/intro2',{
+            templateUrl: 'partials/intro2.html',
+            controller: 'intro',
             resolve: { resolvedVal: function(){ return; }}}
-    )
-        .when('/library',{
-            templateUrl: 'partials/orders/library.html',
-            controller: 'library',
+        )
+        .when('/intro3',{
+            templateUrl: 'partials/intro3.html',
+            controller: 'intro',
             resolve: { resolvedVal: function(){ return; }}}
-    )
-        .when('/menu-types',{
-            templateUrl: 'partials/menu/menu-types.html',
-            controller: 'menu-types',
-            resolve: { resolvedVal: function(){ return; }}}
-    )
-        .when('/menu-items/:menu_type_id',{
-            templateUrl: 'partials/menu/menu-items.html',
-            controller: 'menu-items',
-            resolve: { resolvedVal: function(){ return; }}}
-    )
-        .when('/menu-additions/:menu_type_id/:menu_item_id',{
-            templateUrl: 'partials/menu/menu-additions.html',
-            controller: 'menu-additions',
-            resolve: { resolvedVal: function(){ return; }}}
-    )
-        .when('/cart',{
-            templateUrl: 'partials/cart.html',
-            controller: 'cart',
-            resolve: { resolvedVal: function(){ return; }}}
-    )
-        .when('/status',{
-            templateUrl: 'partials/status.html',
-            controller: 'status',
-            resolve: { resolvedVal: function(){ return; }}}
-    ).otherwise({redirectTo: '/home'});
+    ).otherwise({redirectTo: '/'});
 
 }]);

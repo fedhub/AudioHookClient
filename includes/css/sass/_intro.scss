@@ -1,0 +1,100 @@
+.intro-cont{
+  @include size(100%, 100%);
+  background: url('../../images/background_gradient.png') repeat-x center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  header{
+    @include size(100%, 10%);
+    position: relative;
+  }
+  .main{
+    @include size(100%, 80%);
+    .space{
+      @include size(100%, 10.5%);
+    }
+  }
+  footer{
+    @include size(100%, 10%);
+    position: relative;
+    background: url('../../images/curved_line.png') no-repeat top center;
+    .space{
+      @include size(100%, 38%);
+    }
+  }
+  .hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 1px 0 rgba(#fff, 0.8);
+    left: 0;
+    bottom: 0;
+    background: $hr_color;
+    background-image: -webkit-linear-gradient(left, $hr_color, $hr_color, $hr_color);
+    background-image:    -moz-linear-gradient(left, $hr_color, $hr_color, $hr_color);
+    background-image:     -ms-linear-gradient(left, $hr_color, $hr_color, $hr_color);
+    background-image:      -o-linear-gradient(left, $hr_color, $hr_color, $hr_color);
+  }
+  .skip-intro{
+    position: absolute;
+    bottom: 12px;
+    right: 28px;
+    @include size(106px, 13px);
+    background: url('../../images/skip_intro.png') no-repeat center center;
+    background-size: contain;
+  }
+  .welcome{
+    position: absolute;
+    bottom: 12px;
+    left: 28px;
+    @include size(78px, 17px);
+    background: url('../../images/welcome.png') no-repeat center center;
+    background-size: contain;
+  }
+  .content{
+    @include size(100%, 67.5%);
+  }
+  .intro1{
+    background: url('../../images/intro1_content.png') no-repeat center center;
+    background-size: contain;
+  }
+  .intro2{
+    background: url('../../images/intro2_content.jpeg') no-repeat center center;
+    background-size: contain;
+  }
+  .intro3{
+    background: url('../../images/intro3_content.jpeg') no-repeat center center;
+    background-size: contain;
+  }
+  .radio-cont{
+    @include size(100%, 22%);
+    .space{
+      @include size(100%, 35%);
+    }
+  }
+  .radio-buttons{
+    margin: 0 auto;
+    display: table;
+    @include size(105px, 33px);
+  }
+  .radio-button{
+    @include size(35px, 100%);
+    @include cell-settings();
+  }
+  .radio-active{
+    background: url('../../images/radio_active.png') no-repeat center center;
+    background-size: contain;
+  }
+  .radio-not-active{
+    background: url('../../images/radio_not_active.png') no-repeat center center;
+    background-size: contain;
+  }
+  .intro-next{
+    margin: 0 auto;
+    @include size(72px, 23px);
+    background: url('../../images/intro_next.png') no-repeat center center;
+    background-size: contain;
+  }
+}

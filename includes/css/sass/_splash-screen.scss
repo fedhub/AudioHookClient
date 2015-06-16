@@ -1,0 +1,8 @@
+.splash-cont{
+  @include size(100%, 100%);
+  background: #F2F2F2 url('../../images/splash_screen.png') no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}

@@ -7,10 +7,156 @@ html, body {
 /* line 4, ../sass/_structure.scss */
 * {
   margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
 }
 
-/* line 7, ../sass/_structure.scss */
-.wrapper {
+/* line 1, ../sass/_splash-screen.scss */
+.splash-cont {
   width: 100%;
   height: 100%;
+  background: #F2F2F2 url("../../images/splash_screen.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+/* line 1, ../sass/_intro.scss */
+.intro-cont {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/background_gradient.png") repeat-x center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 8, ../sass/_intro.scss */
+.intro-cont header {
+  width: 100%;
+  height: 10%;
+  position: relative;
+}
+/* line 12, ../sass/_intro.scss */
+.intro-cont .main {
+  width: 100%;
+  height: 80%;
+}
+/* line 14, ../sass/_intro.scss */
+.intro-cont .main .space {
+  width: 100%;
+  height: 10.5%;
+}
+/* line 18, ../sass/_intro.scss */
+.intro-cont footer {
+  width: 100%;
+  height: 10%;
+  position: relative;
+  background: url("../../images/curved_line.png") no-repeat top center;
+}
+/* line 22, ../sass/_intro.scss */
+.intro-cont footer .space {
+  width: 100%;
+  height: 38%;
+}
+/* line 26, ../sass/_intro.scss */
+.intro-cont .hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.8);
+  left: 0;
+  bottom: 0;
+  background: #BCDBE0;
+  background-image: -webkit-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -moz-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -ms-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -o-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+}
+/* line 40, ../sass/_intro.scss */
+.intro-cont .skip-intro {
+  position: absolute;
+  bottom: 12px;
+  right: 28px;
+  width: 106px;
+  height: 13px;
+  background: url("../../images/skip_intro.png") no-repeat center center;
+  background-size: contain;
+}
+/* line 48, ../sass/_intro.scss */
+.intro-cont .welcome {
+  position: absolute;
+  bottom: 12px;
+  left: 28px;
+  width: 78px;
+  height: 17px;
+  background: url("../../images/welcome.png") no-repeat center center;
+  background-size: contain;
+}
+/* line 56, ../sass/_intro.scss */
+.intro-cont .content {
+  width: 100%;
+  height: 67.5%;
+}
+/* line 59, ../sass/_intro.scss */
+.intro-cont .intro1 {
+  background: url("../../images/intro1_content.png") no-repeat center center;
+  background-size: contain;
+}
+/* line 63, ../sass/_intro.scss */
+.intro-cont .intro2 {
+  background: url("../../images/intro2_content.jpeg") no-repeat center center;
+  background-size: contain;
+}
+/* line 67, ../sass/_intro.scss */
+.intro-cont .intro3 {
+  background: url("../../images/intro3_content.jpeg") no-repeat center center;
+  background-size: contain;
+}
+/* line 71, ../sass/_intro.scss */
+.intro-cont .radio-cont {
+  width: 100%;
+  height: 22%;
+}
+/* line 73, ../sass/_intro.scss */
+.intro-cont .radio-cont .space {
+  width: 100%;
+  height: 35%;
+}
+/* line 77, ../sass/_intro.scss */
+.intro-cont .radio-buttons {
+  margin: 0 auto;
+  display: table;
+  width: 105px;
+  height: 33px;
+}
+/* line 82, ../sass/_intro.scss */
+.intro-cont .radio-button {
+  width: 35px;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 86, ../sass/_intro.scss */
+.intro-cont .radio-active {
+  background: url("../../images/radio_active.png") no-repeat center center;
+  background-size: contain;
+}
+/* line 90, ../sass/_intro.scss */
+.intro-cont .radio-not-active {
+  background: url("../../images/radio_not_active.png") no-repeat center center;
+  background-size: contain;
+}
+/* line 94, ../sass/_intro.scss */
+.intro-cont .intro-next {
+  margin: 0 auto;
+  width: 72px;
+  height: 23px;
+  background: url("../../images/intro_next.png") no-repeat center center;
+  background-size: contain;
 }

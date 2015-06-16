@@ -3,7 +3,7 @@ html, body{
 }
 *{
   margin: 0;
-}
-.wrapper{
-  @include size(100%, 100%);
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
