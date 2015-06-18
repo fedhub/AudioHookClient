@@ -15,10 +15,13 @@
             <section class="book-cont" ng-repeat="book in books">
                 <section class="image"></section>
                 <section class="info-cont">
-                    <section class="title-cont"></section>
-                    <section class="author-cont"></section>
-                    <section class="rank-cont"></section>
-                    <section class="buttons-cont"></section>
+                    <section class="title-cont"><p>{{ book.name }}</p></section>
+                    <section class="author-cont"><p>by {{ book.author }}</p></section>
+                    <section class="rank-cont"><p class="flaticon-star129"></p><p class="flaticon-star129"></p><p class="flaticon-star129"></p><p class="flaticon-star129"></p><p class="flaticon-star129"></p></section>
+                    <section class="buttons-cont">
+                        <section class="more-info-button"></section>
+                        <section class="share-button"></section>
+                    </section>
                 </section>
             </section>
         </section>

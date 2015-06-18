@@ -329,36 +329,80 @@ html, body {
 .browse-cont .info-cont {
   width: 65%;
   height: 100%;
-  background-color: yellow;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   float: left;
+  overflow: hidden;
 }
 /* line 112, ../sass/_browse-page.scss */
 .browse-cont .title-cont {
   width: 100%;
   height: 31.5%;
-  background-color: yellow;
+  display: table;
 }
-/* line 116, ../sass/_browse-page.scss */
+/* line 115, ../sass/_browse-page.scss */
+.browse-cont .title-cont p {
+  display: table-cell;
+  vertical-align: middle;
+  color: #0D7E8E;
+  font-size: 22px;
+  font-family: roboto_bold;
+  line-height: 18px;
+  white-space: nowrap;
+  /* Don't forget this one */
+  text-overflow: ellipsis;
+}
+/* line 126, ../sass/_browse-page.scss */
 .browse-cont .author-cont {
   width: 100%;
   height: 17.5%;
-  background-color: green;
+  display: table;
 }
-/* line 120, ../sass/_browse-page.scss */
+/* line 129, ../sass/_browse-page.scss */
+.browse-cont .author-cont p {
+  display: table-cell;
+  vertical-align: middle;
+  color: #0D7E8E;
+  font-size: 10px;
+  font-family: roboto_bold;
+  line-height: 10px;
+}
+/* line 138, ../sass/_browse-page.scss */
 .browse-cont .rank-cont {
   width: 100%;
   height: 17.5%;
-  background-color: orange;
 }
-/* line 124, ../sass/_browse-page.scss */
+/* line 140, ../sass/_browse-page.scss */
+.browse-cont .rank-cont p {
+  font-size: 13px;
+  color: #EEDA44;
+  text-shadow: 0px 0px 1px black;
+  display: inline;
+  margin-right: 5px;
+}
+/* line 148, ../sass/_browse-page.scss */
 .browse-cont .buttons-cont {
   width: 100%;
   height: 33.5%;
-  background-color: brown;
 }
-/* line 140, ../sass/_browse-page.scss */
+/* line 151, ../sass/_browse-page.scss */
+.browse-cont .more-info-button {
+  width: 52%;
+  height: 73%;
+  float: left;
+  border-radius: 5px;
+  background: #0D7E8E url("../../images/more_info_button.png") no-repeat center center;
+}
+/* line 157, ../sass/_browse-page.scss */
+.browse-cont .share-button {
+  width: 38.5%;
+  height: 73%;
+  float: left;
+  margin-left: 5.5%;
+  border-radius: 5px;
+  background: #0D7E8E url("../../images/share_button.png") no-repeat center center;
+}
+/* line 164, ../sass/_browse-page.scss */
 .browse-cont .hr {
   border: 0;
   height: 3px;
