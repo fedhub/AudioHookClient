@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'memphis';
+  src: url("../stylesheets/26165_MPM_____.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'roboto_light';
+  src: url("../stylesheets/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'roboto_bold';
+  src: url("../stylesheets/Roboto-Bold.ttf") format("truetype");
+}
 /* line 1, ../sass/_structure.scss */
 html, body {
   width: 100%;
@@ -13,6 +25,13 @@ html, body {
   /* For some Androids */
 }
 
+@media only screen and (min-width: 480px) {
+  /* line 12, ../sass/_structure.scss */
+  html, body {
+    width: 100%;
+    height: 153%;
+  }
+}
 /* line 1, ../sass/_splash-screen.scss */
 .splash-cont {
   width: 100%;
@@ -109,12 +128,12 @@ html, body {
 }
 /* line 63, ../sass/_intro.scss */
 .intro-cont .intro2 {
-  background: url("../../images/intro2_content.jpeg") no-repeat center center;
+  background: url("../../images/intro2_content.png") no-repeat center center;
   background-size: contain;
 }
 /* line 67, ../sass/_intro.scss */
 .intro-cont .intro3 {
-  background: url("../../images/intro3_content.jpeg") no-repeat center center;
+  background: url("../../images/intro3_content.png") no-repeat center center;
   background-size: contain;
 }
 /* line 71, ../sass/_intro.scss */
@@ -159,4 +178,198 @@ html, body {
   height: 23px;
   background: url("../../images/intro_next.png") no-repeat center center;
   background-size: contain;
+}
+
+/* line 1, ../sass/_browse-page.scss */
+.browse-cont {
+  width: 100%;
+  height: 100%;
+}
+/* line 3, ../sass/_browse-page.scss */
+.browse-cont header {
+  width: 100%;
+  height: 15%;
+  background-color: #107E8D;
+  position: relative;
+  display: table;
+}
+/* line 9, ../sass/_browse-page.scss */
+.browse-cont .hamburger-icon-cont {
+  width: 25%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 12, ../sass/_browse-page.scss */
+.browse-cont .hamburger-icon-cont p {
+  margin: 0 auto;
+  width: 58px;
+  height: 35px;
+  background: url("../../images/hamburger.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 22, ../sass/_browse-page.scss */
+.browse-cont .search-icon-cont {
+  width: 25%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 25, ../sass/_browse-page.scss */
+.browse-cont .search-icon-cont p {
+  margin: 0 auto;
+  width: 38px;
+  height: 35px;
+  background: url("../../images/search_icon.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 35, ../sass/_browse-page.scss */
+.browse-cont .space-cont {
+  width: 25%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 39, ../sass/_browse-page.scss */
+.browse-cont .a-icon-cont {
+  width: 25%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 42, ../sass/_browse-page.scss */
+.browse-cont .a-icon-cont p {
+  margin: 0 auto;
+  width: 54px;
+  height: 53px;
+  background: url("../../images/a_icon.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 52, ../sass/_browse-page.scss */
+.browse-cont .main {
+  width: 100%;
+  height: 85%;
+  background-color: #4098A4;
+}
+/* line 56, ../sass/_browse-page.scss */
+.browse-cont .content-cont {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 60, ../sass/_browse-page.scss */
+.browse-cont .top-bar {
+  width: 100%;
+  height: 7%;
+  display: table;
+}
+/* line 64, ../sass/_browse-page.scss */
+.browse-cont .filter-cont {
+  width: 50%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 68, ../sass/_browse-page.scss */
+.browse-cont .filter-cont p {
+  text-align: left;
+  line-height: 18px;
+  font-family: memphis;
+  font-size: 18px;
+  color: #FFF;
+}
+/* line 76, ../sass/_browse-page.scss */
+.browse-cont .clear-filter-cont {
+  width: 50%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 80, ../sass/_browse-page.scss */
+.browse-cont .clear-filter-cont p {
+  text-align: right;
+  line-height: 15px;
+  font-family: roboto_light;
+  font-size: 15px;
+  text-decoration: underline;
+  color: #FFF;
+}
+/* line 89, ../sass/_browse-page.scss */
+.browse-cont .book-cont {
+  width: 100%;
+  height: 28%;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 0 1px 1px rgba(51, 51, 51, 0.2);
+  position: relative;
+  background-color: #FCFCFC;
+}
+/* line 98, ../sass/_browse-page.scss */
+.browse-cont .image {
+  width: 35%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  float: left;
+}
+/* line 105, ../sass/_browse-page.scss */
+.browse-cont .info-cont {
+  width: 65%;
+  height: 100%;
+  background-color: yellow;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  float: left;
+}
+/* line 112, ../sass/_browse-page.scss */
+.browse-cont .title-cont {
+  width: 100%;
+  height: 31.5%;
+  background-color: yellow;
+}
+/* line 116, ../sass/_browse-page.scss */
+.browse-cont .author-cont {
+  width: 100%;
+  height: 17.5%;
+  background-color: green;
+}
+/* line 120, ../sass/_browse-page.scss */
+.browse-cont .rank-cont {
+  width: 100%;
+  height: 17.5%;
+  background-color: orange;
+}
+/* line 124, ../sass/_browse-page.scss */
+.browse-cont .buttons-cont {
+  width: 100%;
+  height: 33.5%;
+  background-color: brown;
+}
+/* line 140, ../sass/_browse-page.scss */
+.browse-cont .hr {
+  border: 0;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.8);
+  left: 0;
+  bottom: 0;
+  background: #85BEC7;
+  background-image: -webkit-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -moz-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -ms-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -o-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
 }

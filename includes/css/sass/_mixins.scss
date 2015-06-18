@@ -1,3 +1,7 @@
+$landscape: 480px;
+$small: 320px;
+$medium: 375px;
+
 @mixin size($width, $height){
   width: $width;
   height: $height;
@@ -7,4 +11,22 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+}
+
+@mixin landscape(){
+  @media only screen and (min-width: $landscape) {
+    @content;
+  }
+}
+
+@mixin small(){
+  @media only screen and (min-width: $small) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media only screen and (min-width: $medium) {
+    @content;
+  }
 }

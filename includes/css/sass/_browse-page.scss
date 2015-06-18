@@ -1,0 +1,155 @@
+.browse-cont{
+  @include size(100%, 100%);
+  header{
+    @include size(100%, 15%);
+    background-color: #107E8D;
+    position: relative;
+    display: table;
+  }
+  .hamburger-icon-cont{
+    @include size(25%, 100%);
+    @include cell-settings();
+    p{
+      margin: 0 auto;
+      @include size(58px, 35px);
+      background: url('../../images/hamburger.png') no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
+  }
+  .search-icon-cont{
+    @include size(25%, 100%);
+    @include cell-settings();
+    p{
+      margin: 0 auto;
+      @include size(38px, 35px);
+      background: url('../../images/search_icon.png') no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
+  }
+  .space-cont{
+    @include size(25%, 100%);
+    @include cell-settings();
+  }
+  .a-icon-cont{
+    @include size(25%, 100%);
+    @include cell-settings();
+    p{
+      margin: 0 auto;
+      @include size(54px, 53px);
+      background: url('../../images/a_icon.png') no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
+  }
+  .main{
+    @include size(100%, 85%);
+    background-color: #4098A4;
+  }
+  .content-cont{
+    @include size(85%, 100%);
+    margin: 0 auto;
+  }
+  .top-bar{
+    @include size(100%, 7%);
+    display: table;
+  }
+  .filter-cont{
+    @include size(50%, 100%);
+    display: table-cell;
+    vertical-align: bottom;
+    p{
+      text-align: left;
+      line-height: 18px;
+      font-family: memphis;
+      font-size: 18px;
+      color: #FFF;
+    }
+  }
+  .clear-filter-cont{
+    @include size(50%, 100%);
+    display: table-cell;
+    vertical-align: bottom;
+    p{
+      text-align: right;
+      line-height: 15px;
+      font-family: roboto_light;
+      font-size: 15px;
+      text-decoration: underline;
+      color: #FFF;
+    }
+  }
+  .book-cont{
+    @include size(100%, 28%);
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 1px 1px rgba(#333, 0.2);
+    position: relative;
+    background-color: #FCFCFC;
+  }
+
+  .image{
+    @include size(35%, 100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+  }
+
+  .info-cont{
+    @include size(65%, 100%);
+    background-color: yellow;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: left;
+  }
+  .title-cont{
+    @include size(100%, 31.5%);
+    background-color: yellow;
+  }
+  .author-cont{
+    @include size(100%, 17.5%);
+    background-color: green;
+  }
+  .rank-cont{
+    @include size(100%, 17.5%);
+    background-color: orange;
+  }
+  .buttons-cont{
+    @include size(100%, 33.5%);
+    background-color: brown;
+  }
+
+//  p.title{
+//    color: #0D7E8E;
+//    width: 60%;
+//    font-size: 18px;
+//    font-family: roboto_bold;
+//    line-height: 18px;
+//    text-align: left;
+//    position: absolute;
+//    right: 0px;
+//    top: 5px;
+//  }
+  .hr{
+    border: 0;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 1px 0 rgba(#fff, 0.8);
+    left: 0;
+    bottom: 0;
+    background: #85BEC7;
+    background-image: -webkit-linear-gradient(left, $hr_color, $hr_color, $hr_color);
+    background-image:    -moz-linear-gradient(left, $hr_color, $hr_color, $hr_color);
+    background-image:     -ms-linear-gradient(left, $hr_color, $hr_color, $hr_color);
+    background-image:      -o-linear-gradient(left, $hr_color, $hr_color, $hr_color);
+  }
+
+}

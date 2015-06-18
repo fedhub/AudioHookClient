@@ -1,6 +1,8 @@
 var app = angular.module('myapp', [
     'myapp.splash-screen',
-    'myapp.intro'
+    'myapp.intro',
+    'myapp.browse',
+    'myapp.services'
 ]);
 
 //var base_url = 'http://audiohook.herokuapp.com';
@@ -27,6 +29,11 @@ app.config(['$routeProvider', function($routeProvider){
         .when('/intro3',{
             templateUrl: 'partials/intro3.html',
             controller: 'intro',
+            resolve: { resolvedVal: function(){ return; }}}
+        )
+        .when('/browse',{
+            templateUrl: 'partials/browse.html',
+            controller: 'browse',
             resolve: { resolvedVal: function(){ return; }}}
     ).otherwise({redirectTo: '/'});
 
