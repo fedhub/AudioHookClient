@@ -7,7 +7,7 @@ var app = angular.module('myapp', [
 ]);
 
 //var base_url = 'http://audiohook.herokuapp.com';
-var base_url = 'http://www.audiohook.herokuapp.com';
+var base_url = 'localhost:3000';
 
 app.config(['$routeProvider', function($routeProvider){
 
