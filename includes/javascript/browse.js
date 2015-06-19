@@ -8,6 +8,10 @@ app.controller('browse', ['$scope', 'books', function($scope, books){
 
     $scope.step_to = function(dest){
         window.location = '#/'+dest;
+    };
+
+    $scope.search = function(){
+        window.location = '#/search';
     }
 
 }]);

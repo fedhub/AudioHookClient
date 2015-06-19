@@ -1,18 +1,19 @@
 <section class="browse-cont">
     <header>
-        <section class="a-icon-cont"><p ng-click="step_to('splash-screen')"></p></section>
-        <section class="space-cont"></section>
-        <section class="search-icon-cont" ng-click="search()"><p></p></section>
-        <section class="hamburger-icon-cont"><p></p></section>
+        <section class="input-cont">
+            <section class="input-wrap">
+                <input type="text"/>
+            </section>
+            <section class="x-cont"><p class="flaticon-cancel30" ng-click="delete_text()"></p></section>
+        </section>
         <section class="hr"></section>
     </header>
     <section class="main">
         <section class="content-cont">
             <section class="top-bar">
-                <section class="filter-cont"><p>Filter to: All</p></section>
-                <section class="clear-filter-cont"><p>Clear filters</p></section>
+                <section class="filter-cont"><p>Search results</p></section>
             </section>
-            <section class="book-cont" ng-repeat="book in books">
+            <section class="book-cont" ng-repeat="book in bookss">
                 <section class="image"></section>
                 <section class="info-cont">
                     <section class="title-cont"><p>{{ book.name }}</p></section>

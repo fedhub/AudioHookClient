@@ -13,6 +13,9 @@
 	font-family: Flaticon;
 font-style: normal;
 margin-left: 0;
+}
+.flaticon-cancel30:before {
+    content: "\e000";
 }.flaticon-star129:before {
-	content: "\e000";
+	content: "\e001";
 }
