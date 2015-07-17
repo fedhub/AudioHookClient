@@ -13,9 +13,11 @@
 /* line 1, ../sass/_structure.scss */
 html, body {
   height: 100%;
+  width: 100%;
+  background-color: #4098A4;
 }
 
-/* line 6, ../sass/_structure.scss */
+/* line 8, ../sass/_structure.scss */
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +27,7 @@ html, body {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 14, ../sass/_structure.scss */
+  /* line 16, ../sass/_structure.scss */
   html, body {
     width: 100%;
     height: 153%;
@@ -182,17 +184,17 @@ html, body {
 /* line 1, ../sass/_browse-page.scss */
 .browse-cont {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
-/* line 3, ../sass/_browse-page.scss */
+/* line 4, ../sass/_browse-page.scss */
 .browse-cont header {
   width: 100%;
   height: 15%;
-  background-color: #107E8D;
   position: relative;
   display: table;
+  background-color: #0D7E8E;
 }
-/* line 9, ../sass/_browse-page.scss */
+/* line 10, ../sass/_browse-page.scss */
 .browse-cont .hamburger-icon-cont {
   width: 25%;
   height: 100%;
@@ -200,7 +202,7 @@ html, body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 12, ../sass/_browse-page.scss */
+/* line 13, ../sass/_browse-page.scss */
 .browse-cont .hamburger-icon-cont p {
   margin: 0 auto;
   width: 58px;
@@ -211,7 +213,7 @@ html, body {
   -o-background-size: contain;
   background-size: contain;
 }
-/* line 22, ../sass/_browse-page.scss */
+/* line 23, ../sass/_browse-page.scss */
 .browse-cont .search-icon-cont {
   width: 25%;
   height: 100%;
@@ -219,7 +221,7 @@ html, body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 25, ../sass/_browse-page.scss */
+/* line 26, ../sass/_browse-page.scss */
 .browse-cont .search-icon-cont p {
   margin: 0 auto;
   width: 38px;
@@ -230,7 +232,7 @@ html, body {
   -o-background-size: contain;
   background-size: contain;
 }
-/* line 35, ../sass/_browse-page.scss */
+/* line 36, ../sass/_browse-page.scss */
 .browse-cont .space-cont {
   width: 25%;
   height: 100%;
@@ -238,7 +240,7 @@ html, body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 39, ../sass/_browse-page.scss */
+/* line 40, ../sass/_browse-page.scss */
 .browse-cont .a-icon-cont {
   width: 25%;
   height: 100%;
@@ -246,7 +248,7 @@ html, body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 42, ../sass/_browse-page.scss */
+/* line 43, ../sass/_browse-page.scss */
 .browse-cont .a-icon-cont p {
   margin: 0 auto;
   width: 54px;
@@ -257,32 +259,32 @@ html, body {
   -o-background-size: contain;
   background-size: contain;
 }
-/* line 52, ../sass/_browse-page.scss */
+/* line 53, ../sass/_browse-page.scss */
 .browse-cont .main {
   width: 100%;
   height: 85%;
   background-color: #4098A4;
 }
-/* line 56, ../sass/_browse-page.scss */
+/* line 57, ../sass/_browse-page.scss */
 .browse-cont .content-cont {
-  width: 85%;
-  height: 100%;
-  margin: 0 auto;
-}
-/* line 60, ../sass/_browse-page.scss */
-.browse-cont .top-bar {
   width: 100%;
-  height: 7%;
+  background-color: #4098A4;
+}
+/* line 61, ../sass/_browse-page.scss */
+.browse-cont .top-bar {
+  width: 85%;
+  height: 35px;
+  margin: 0 auto;
   display: table;
 }
-/* line 64, ../sass/_browse-page.scss */
+/* line 66, ../sass/_browse-page.scss */
 .browse-cont .filter-cont {
   width: 50%;
   height: 100%;
   display: table-cell;
   vertical-align: bottom;
 }
-/* line 68, ../sass/_browse-page.scss */
+/* line 70, ../sass/_browse-page.scss */
 .browse-cont .filter-cont p {
   text-align: left;
   line-height: 18px;
@@ -290,14 +292,14 @@ html, body {
   font-size: 18px;
   color: #FFF;
 }
-/* line 76, ../sass/_browse-page.scss */
+/* line 78, ../sass/_browse-page.scss */
 .browse-cont .clear-filter-cont {
   width: 50%;
   height: 100%;
   display: table-cell;
   vertical-align: bottom;
 }
-/* line 80, ../sass/_browse-page.scss */
+/* line 82, ../sass/_browse-page.scss */
 .browse-cont .clear-filter-cont p {
   text-align: right;
   line-height: 15px;
@@ -306,17 +308,17 @@ html, body {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 89, ../sass/_browse-page.scss */
+/* line 91, ../sass/_browse-page.scss */
 .browse-cont .book-cont {
-  width: 100%;
-  height: 28%;
+  width: 305px;
+  height: 118px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin: 20px auto;
   box-shadow: 0 0 1px 1px rgba(51, 51, 51, 0.2);
   position: relative;
   background-color: #FCFCFC;
 }
-/* line 98, ../sass/_browse-page.scss */
+/* line 100, ../sass/_browse-page.scss */
 .browse-cont .image {
   width: 35%;
   height: 100%;
@@ -324,7 +326,7 @@ html, body {
   border-bottom-left-radius: 5px;
   float: left;
 }
-/* line 105, ../sass/_browse-page.scss */
+/* line 107, ../sass/_browse-page.scss */
 .browse-cont .info-cont {
   width: 65%;
   height: 100%;
@@ -333,13 +335,13 @@ html, body {
   float: left;
   overflow: hidden;
 }
-/* line 112, ../sass/_browse-page.scss */
+/* line 114, ../sass/_browse-page.scss */
 .browse-cont .title-cont {
   width: 100%;
   height: 31.5%;
   display: table;
 }
-/* line 115, ../sass/_browse-page.scss */
+/* line 117, ../sass/_browse-page.scss */
 .browse-cont .title-cont p {
   display: table-cell;
   vertical-align: middle;
@@ -351,13 +353,13 @@ html, body {
   /* Don't forget this one */
   text-overflow: ellipsis;
 }
-/* line 126, ../sass/_browse-page.scss */
+/* line 128, ../sass/_browse-page.scss */
 .browse-cont .author-cont {
   width: 100%;
   height: 17.5%;
   display: table;
 }
-/* line 129, ../sass/_browse-page.scss */
+/* line 131, ../sass/_browse-page.scss */
 .browse-cont .author-cont p {
   display: table-cell;
   vertical-align: middle;
@@ -366,12 +368,12 @@ html, body {
   font-family: roboto_bold;
   line-height: 10px;
 }
-/* line 138, ../sass/_browse-page.scss */
+/* line 140, ../sass/_browse-page.scss */
 .browse-cont .rank-cont {
   width: 100%;
   height: 17.5%;
 }
-/* line 140, ../sass/_browse-page.scss */
+/* line 142, ../sass/_browse-page.scss */
 .browse-cont .rank-cont p {
   font-size: 13px;
   color: #EEDA44;
@@ -379,12 +381,12 @@ html, body {
   display: inline;
   margin-right: 5px;
 }
-/* line 148, ../sass/_browse-page.scss */
+/* line 150, ../sass/_browse-page.scss */
 .browse-cont .buttons-cont {
   width: 100%;
   height: 33.5%;
 }
-/* line 151, ../sass/_browse-page.scss */
+/* line 153, ../sass/_browse-page.scss */
 .browse-cont .more-info-button {
   width: 52%;
   height: 73%;
@@ -392,7 +394,7 @@ html, body {
   border-radius: 5px;
   background: #0D7E8E url("../../images/more_info_button.png") no-repeat center center;
 }
-/* line 157, ../sass/_browse-page.scss */
+/* line 159, ../sass/_browse-page.scss */
 .browse-cont .share-button {
   width: 38.5%;
   height: 73%;
@@ -401,7 +403,7 @@ html, body {
   border-radius: 5px;
   background: #0D7E8E url("../../images/share_button.png") no-repeat center center;
 }
-/* line 164, ../sass/_browse-page.scss */
+/* line 166, ../sass/_browse-page.scss */
 .browse-cont .hr {
   border: 0;
   height: 3px;
@@ -418,12 +420,12 @@ html, body {
 }
 
 /* line 1, ../sass/_search.scss */
-.browse-cont {
+.browse-cont, .filters-cont {
   width: 100%;
   height: 100%;
 }
 /* line 3, ../sass/_search.scss */
-.browse-cont .input-cont {
+.browse-cont .input-cont, .filters-cont .input-cont {
   width: 80%;
   height: 70%;
   background-color: #FFF;
@@ -432,7 +434,7 @@ html, body {
   display: table;
 }
 /* line 10, ../sass/_search.scss */
-.browse-cont .x-cont {
+.browse-cont .x-cont, .filters-cont .x-cont {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -440,19 +442,19 @@ html, body {
   height: 100%;
 }
 /* line 13, ../sass/_search.scss */
-.browse-cont .x-cont p {
+.browse-cont .x-cont p, .filters-cont .x-cont p {
   font-size: 30px;
   color: rgba(51, 51, 51, 0.8);
   text-align: center;
 }
 /* line 19, ../sass/_search.scss */
-.browse-cont .input-wrap {
+.browse-cont .input-wrap, .filters-cont .input-wrap {
   display: table-cell;
   width: 75%;
   height: 100%;
 }
 /* line 23, ../sass/_search.scss */
-.browse-cont input {
+.browse-cont input, .filters-cont input {
   width: 97%;
   height: 98%;
   padding-left: 10px;
@@ -465,4 +467,191 @@ html, body {
 /* line 32, ../sass/_search.scss */
 *:focus {
   outline: 0;
+}
+
+/* line 1, ../sass/_filters.scss */
+.filters-cont {
+  width: 100%;
+  min-height: 100%;
+}
+/* line 4, ../sass/_filters.scss */
+.filters-cont header {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  display: table;
+  background-color: #0D7E8E;
+}
+/* line 10, ../sass/_filters.scss */
+.filters-cont .hamburger-icon-cont {
+  width: 25%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 13, ../sass/_filters.scss */
+.filters-cont .hamburger-icon-cont p {
+  margin: 0 auto;
+  width: 58px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 28px;
+  color: #FFFFFE;
+}
+/* line 21, ../sass/_filters.scss */
+.filters-cont .search-icon-cont {
+  width: 25%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 24, ../sass/_filters.scss */
+.filters-cont .search-icon-cont p {
+  margin: 0 auto;
+  width: 38px;
+  height: 35px;
+  background: url("../../images/search_icon.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 34, ../sass/_filters.scss */
+.filters-cont .space-cont {
+  width: 25%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 38, ../sass/_filters.scss */
+.filters-cont .a-icon-cont {
+  width: 25%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 41, ../sass/_filters.scss */
+.filters-cont .a-icon-cont p {
+  margin: 0 auto;
+  width: 54px;
+  height: 53px;
+  background: url("../../images/a_icon.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 51, ../sass/_filters.scss */
+.filters-cont .main {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+/* line 55, ../sass/_filters.scss */
+.filters-cont .filter-cont {
+  width: 85%;
+  height: 35px;
+  margin: 0 auto;
+  display: table;
+}
+/* line 60, ../sass/_filters.scss */
+.filters-cont .filter-box-left {
+  width: 50%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 64, ../sass/_filters.scss */
+.filters-cont .filter-box-left p {
+  text-align: left;
+  font-family: memphis;
+  font-size: 18px;
+  color: rgba(13, 126, 142, 0.5);
+}
+/* line 71, ../sass/_filters.scss */
+.filters-cont #genres {
+  font-family: roboto_light;
+  color: rgba(13, 126, 142, 0.7);
+}
+/* line 75, ../sass/_filters.scss */
+.filters-cont #genre-title {
+  width: 85%;
+  height: 22px;
+}
+/* line 78, ../sass/_filters.scss */
+.filters-cont .filter-box-right {
+  width: 50%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 82, ../sass/_filters.scss */
+.filters-cont .filter-box-right p {
+  text-align: right;
+  font-family: roboto_light;
+  font-size: 15px;
+  color: rgba(51, 51, 51, 0.9);
+}
+/* line 89, ../sass/_filters.scss */
+.filters-cont .space {
+  width: 100%;
+  height: 25px;
+}
+/* line 92, ../sass/_filters.scss */
+.filters-cont .row {
+  width: 85%;
+  height: 40px;
+  margin: 15px auto;
+  margin-bottom: 15px;
+  display: table;
+}
+/* line 98, ../sass/_filters.scss */
+.filters-cont .check {
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+  border: solid 2px #0D7E8E;
+  border-radius: 15px;
+}
+/* line 104, ../sass/_filters.scss */
+.filters-cont .filter-name {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 107, ../sass/_filters.scss */
+.filters-cont .filter-name p {
+  font-family: roboto_light;
+  font-size: 22px;
+  color: rgba(13, 126, 142, 0.8);
+  padding-left: 15px;
+}
+/* line 114, ../sass/_filters.scss */
+.filters-cont .done {
+  width: 85%;
+  height: 50px;
+  margin: 5px auto 25px;
+  border-radius: 5px;
+  background: #0D7E8E url("../../images/done.png") no-repeat center center;
+}
+/* line 120, ../sass/_filters.scss */
+.filters-cont .v-bg {
+  background: url("../../images/v.png") no-repeat center center;
+}
+/* line 123, ../sass/_filters.scss */
+.filters-cont .hr {
+  border: 0;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.8);
+  left: 0;
+  bottom: 0;
+  background: #85BEC7;
+  background-image: -webkit-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -moz-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -ms-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -o-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
 }

@@ -4,14 +4,18 @@ var app = angular.module('myapp.browse', [
 
 app.controller('browse', ['$scope', 'books', function($scope, books){
 
-    get_all_books($scope, books);
+    $('html').css('background-color', '#4098A4');
+    if(books.get_books().length == 0)
+        get_all_books($scope, books);
+    if(books.get_filters_flag())
+        get_by_filters($scope, books);
 
     $scope.step_to = function(dest){
         window.location = '#/'+dest;
     };
 
     $scope.search = function(){
-        window.location = '#/search';
+        window.location = '#/search/arrived_from=browse';
     }
 
 }]);
@@ -27,7 +31,6 @@ function get_all_books($scope, books){
         $scope.books = _books;
         $scope.$apply();
         $.each( $('.book-cont .image'), function(i) {
-            console.log(_books[i].image);
             $(this).css({
                 "background": "#FCFCFC url('includes/images/"+_books[i].image+"') no-repeat",
                 "background-size": "contain",
@@ -35,4 +38,8 @@ function get_all_books($scope, books){
             });
         });
     });
+}
+
+function get_by_filters($scope, books){
+
 }

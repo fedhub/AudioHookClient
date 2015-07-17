@@ -1,0 +1,54 @@
+<section class="filters-cont">
+    <header>
+        <section class="a-icon-cont"><p ng-click="step_to('splash-screen')"></p></section>
+        <section class="space-cont"></section>
+        <section class="search-icon-cont" ng-click="search()"><p></p></section>
+        <section class="hamburger-icon-cont" ng-click="step_to('browse')"><p class="flaticon-cancel30"></p></section>
+        <section class="hr"></section>
+    </header>
+    <section class="main">
+        <section class="filter-cont">
+            <section class="filter-box-left"><p>FILTERS</p></section>
+            <section class="filter-box-right"><p ng-click="clear('filters')">Clear filters</p></section>
+        </section>
+        <section class="space"></section>
+        <section class="row filters" id="downloads">
+            <section class="check"></section>
+            <section class="filter-name"><p>Most downloads</p></section>
+        </section>
+        <section class="row filters" id="seeds">
+            <section class="check"></section>
+            <section class="filter-name"><p>20+ Seeds</p></section>
+        </section>
+        <section class="space"></section>
+        <section class="filter-cont" id="genre-title">
+            <section class="filter-box-left"><p id="genres">GENRES</p></section>
+            <section class="filter-box-right"><p ng-click="clear('genres')">Clear genres</p></section>
+        </section>
+        <section class="row genres" id="all">
+            <section class="check"></section>
+            <section class="filter-name"><p>All</p></section>
+        </section>
+        <section class="row genres" id="arts">
+            <section class="check"></section>
+            <section class="filter-name"><p>Arts & Entertainment</p></section>
+        </section>
+        <section class="row genres">
+            <section class="check"></section>
+            <section class="filter-name"><p>Biography & Memoir</p></section>
+        </section>
+        <section class="row genres" id="cooking">
+            <section class="check"></section>
+            <section class="filter-name"><p>Cooking</p></section>
+        </section>
+        <section class="row genres" id="history">
+            <section class="check"></section>
+            <section class="filter-name"><p>History</p></section>
+        </section>
+        <section class="row genres" id="fiction">
+            <section class="check"></section>
+            <section class="filter-name"><p>Fiction</p></section>
+        </section>
+    </section>
+    <section class="done" ng-click="done()"></section>
+</section>
