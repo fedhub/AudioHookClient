@@ -1,0 +1,46 @@
+<section class="book-info-cont">
+    <header>
+        <section class="back-cont"><p ng-click="step_to('browse')"></p></section>
+        <section class="title-cont"><p></p></section>
+        <section class="share-cont"><p ng-click="step_to('share')"></p></section>
+    </header>
+    <section class="main">
+        <section class="book-info">
+            <section class="image"></section>
+            <section class="info">
+                <section class="title"><p>{{ title }}</p></section>
+                <section class="author"><p> by {{ author }}</p></section>
+                <section class="rank"><p class="flaticon-star129"></p><p class="flaticon-star129"></p><p class="flaticon-star129"></p><p class="flaticon-star129"></p><p class="flaticon-star129"></p></section>
+            </section>
+        </section>
+        <section class="downloads">
+            <section class="downloads-info">
+                <section class="top-det"><p>{{ downloads }}</p></section>
+                <section class="bottom-det"><p>DOWNLOADS</p></section>
+            </section>
+            <section class="growth-info">
+                <section class="top-det"><p>+24%</p></section>
+                <section class="bottom-det"><p>WEEKLY GROWTH</p></section>
+            </section>
+        </section>
+        <section class="description-cont">
+            <section class="desc-title"><p>DESCRIPTION</p></section>
+            <section class="desc-paragraph" ng-repeat="desc_par in desc_pars"><p>{{ desc_par.paragraph }}</p></section>
+        </section>
+        <section class="reviews-cont">
+            <section class="reviews-title"><p>REVIEWS</p></section>
+            <section class="rev-cont" ng-repeat="rev in revs">
+                <section class="rev-header">
+                    <p class="flaticon-star129 rev-rank"></p><p class="rev-title">{{ rev.title }}jhkjhkjhjk</p>
+                </section>
+                <section class="rev-paragraph" ng-repeat="content in rev.content"><p>{{ content.paragraph }}</p></section>
+            </section>
+        </section>
+        <footer>
+            <section class="footer-cont">
+                <section class="left-wrap"><p>AUDIOHOOK</p></section>
+                <section class="right-wrap"><p>ABOUT</p><p>FACEBOOK</p></section>
+            </section>
+        </footer>
+    </section>
+</section>

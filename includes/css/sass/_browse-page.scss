@@ -113,14 +113,14 @@
   }
   .title-cont{
     @include size(100%, 31.5%);
-    display: table;
+    //display: table;
     p{
-      display: table-cell;
       vertical-align: middle;
       color: #0D7E8E;
       font-size: 22px;
       font-family: roboto_bold;
-      line-height: 18px;
+      line-height: 37px;
+      overflow: hidden;
       white-space: nowrap; /* Don't forget this one */
       text-overflow: ellipsis;
     }
@@ -177,5 +177,4 @@
     background-image:     -ms-linear-gradient(left, $hr_color, $hr_color, $hr_color);
     background-image:      -o-linear-gradient(left, $hr_color, $hr_color, $hr_color);
   }
-
 }

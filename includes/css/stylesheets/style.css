@@ -339,16 +339,15 @@ html, body {
 .browse-cont .title-cont {
   width: 100%;
   height: 31.5%;
-  display: table;
 }
 /* line 117, ../sass/_browse-page.scss */
 .browse-cont .title-cont p {
-  display: table-cell;
   vertical-align: middle;
   color: #0D7E8E;
   font-size: 22px;
   font-family: roboto_bold;
-  line-height: 18px;
+  line-height: 37px;
+  overflow: hidden;
   white-space: nowrap;
   /* Don't forget this one */
   text-overflow: ellipsis;
@@ -420,12 +419,12 @@ html, body {
 }
 
 /* line 1, ../sass/_search.scss */
-.browse-cont, .filters-cont {
+.browse-cont, .filters-cont, .book-info-cont, .share-cont {
   width: 100%;
   height: 100%;
 }
 /* line 3, ../sass/_search.scss */
-.browse-cont .input-cont, .filters-cont .input-cont {
+.browse-cont .input-cont, .filters-cont .input-cont, .book-info-cont .input-cont, .share-cont .input-cont {
   width: 80%;
   height: 70%;
   background-color: #FFF;
@@ -434,7 +433,7 @@ html, body {
   display: table;
 }
 /* line 10, ../sass/_search.scss */
-.browse-cont .x-cont, .filters-cont .x-cont {
+.browse-cont .x-cont, .filters-cont .x-cont, .book-info-cont .x-cont, .share-cont .x-cont {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -442,19 +441,19 @@ html, body {
   height: 100%;
 }
 /* line 13, ../sass/_search.scss */
-.browse-cont .x-cont p, .filters-cont .x-cont p {
+.browse-cont .x-cont p, .filters-cont .x-cont p, .book-info-cont .x-cont p, .share-cont .x-cont p {
   font-size: 30px;
   color: rgba(51, 51, 51, 0.8);
   text-align: center;
 }
 /* line 19, ../sass/_search.scss */
-.browse-cont .input-wrap, .filters-cont .input-wrap {
+.browse-cont .input-wrap, .filters-cont .input-wrap, .book-info-cont .input-wrap, .share-cont .input-wrap {
   display: table-cell;
   width: 75%;
   height: 100%;
 }
 /* line 23, ../sass/_search.scss */
-.browse-cont input, .filters-cont input {
+.browse-cont input, .filters-cont input, .book-info-cont input, .share-cont input {
   width: 97%;
   height: 98%;
   padding-left: 10px;
@@ -650,6 +649,439 @@ html, body {
   left: 0;
   bottom: 0;
   background: #85BEC7;
+  background-image: -webkit-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -moz-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -ms-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+  background-image: -o-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
+}
+
+/* line 1, ../sass/_book-info.scss */
+.book-info-cont {
+  width: 100%;
+  min-height: 100%;
+}
+/* line 4, ../sass/_book-info.scss */
+.book-info-cont header {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  display: table;
+  background-color: #0D7E8E;
+  box-shadow: 0px 0px 1px 0px rgba(51, 51, 51, 0.8);
+}
+/* line 11, ../sass/_book-info.scss */
+.book-info-cont .main {
+  width: 100%;
+  background-color: #FFF;
+}
+/* line 15, ../sass/_book-info.scss */
+.book-info-cont .book-info {
+  width: 70%;
+  height: 90px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 21, ../sass/_book-info.scss */
+.book-info-cont .downloads {
+  width: 70%;
+  height: 70px;
+  display: table;
+  margin: 0 auto;
+  border-top: 1px solid #0D7E8E;
+  border-bottom: 1px solid #0D7E8E;
+}
+/* line 28, ../sass/_book-info.scss */
+.book-info-cont .description-cont, .book-info-cont .reviews-cont {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 34, ../sass/_book-info.scss */
+.book-info-cont .reviews-cont {
+  padding-top: 0;
+}
+/* line 37, ../sass/_book-info.scss */
+.book-info-cont .desc-title, .book-info-cont .reviews-title {
+  width: 100%;
+  height: 25px;
+  display: table;
+}
+/* line 40, ../sass/_book-info.scss */
+.book-info-cont .desc-title p, .book-info-cont .reviews-title p {
+  display: table-cell;
+  vertical-align: bottom;
+  font-family: roboto_bold;
+  color: rgba(13, 126, 142, 0.8);
+  font-size: 11px;
+}
+/* line 48, ../sass/_book-info.scss */
+.book-info-cont .rev-cont {
+  width: 100%;
+}
+/* line 51, ../sass/_book-info.scss */
+.book-info-cont .rev-header {
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Don't forget this one */
+  text-overflow: ellipsis;
+}
+/* line 56, ../sass/_book-info.scss */
+.book-info-cont .rev-header p {
+  display: inline;
+}
+/* line 60, ../sass/_book-info.scss */
+.book-info-cont p.rev-rank {
+  line-height: 35px;
+  font-size: 14px;
+  color: #EEDA44;
+  display: inline;
+  margin-right: 5px;
+}
+/* line 67, ../sass/_book-info.scss */
+.book-info-cont p.rev-title {
+  line-height: 35px;
+  font-family: roboto_light;
+  color: #0D7E8E;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 5px;
+}
+/* line 75, ../sass/_book-info.scss */
+.book-info-cont .desc-paragraph {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 79, ../sass/_book-info.scss */
+.book-info-cont .desc-paragraph p {
+  font-family: roboto_light;
+  color: #0D7E8E;
+  font-size: 16px;
+}
+/* line 85, ../sass/_book-info.scss */
+.book-info-cont .rev-paragraph {
+  width: 100%;
+  padding-bottom: 10px;
+}
+/* line 88, ../sass/_book-info.scss */
+.book-info-cont .rev-paragraph p {
+  font-family: roboto_light;
+  color: #0D7E8E;
+  font-size: 14px;
+}
+/* line 94, ../sass/_book-info.scss */
+.book-info-cont .downloads-info {
+  width: 40%;
+  height: 100%;
+  display: table-cell;
+}
+/* line 98, ../sass/_book-info.scss */
+.book-info-cont .growth-info {
+  width: 60%;
+  height: 100%;
+  display: table-cell;
+}
+/* line 102, ../sass/_book-info.scss */
+.book-info-cont .top-det {
+  width: 100%;
+  height: 65%;
+  display: table;
+}
+/* line 105, ../sass/_book-info.scss */
+.book-info-cont .top-det p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: memphis;
+  font-weight: bold;
+  color: #0D7E8E;
+  font-size: 35px;
+}
+/* line 115, ../sass/_book-info.scss */
+.book-info-cont .bottom-det {
+  width: 100%;
+  height: 35%;
+  display: table;
+}
+/* line 118, ../sass/_book-info.scss */
+.book-info-cont .bottom-det p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: roboto_light;
+  color: rgba(13, 126, 142, 0.6);
+  font-size: 13px;
+}
+/* line 125, ../sass/_book-info.scss */
+.book-info-cont .image {
+  width: 35%;
+  height: 100%;
+  float: left;
+}
+/* line 129, ../sass/_book-info.scss */
+.book-info-cont .info {
+  width: 65%;
+  height: 100%;
+  float: left;
+}
+/* line 133, ../sass/_book-info.scss */
+.book-info-cont .title {
+  width: 100%;
+  height: 30px;
+}
+/* line 135, ../sass/_book-info.scss */
+.book-info-cont .title p {
+  line-height: 30px;
+  font-family: roboto_bold;
+  color: #0D7E8E;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Don't forget this one */
+  text-overflow: ellipsis;
+}
+/* line 145, ../sass/_book-info.scss */
+.book-info-cont .author {
+  width: 100%;
+  height: 15px;
+}
+/* line 147, ../sass/_book-info.scss */
+.book-info-cont .author p {
+  line-height: 15px;
+  font-family: roboto_bold;
+  color: #0D7E8E;
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Don't forget this one */
+  text-overflow: ellipsis;
+}
+/* line 157, ../sass/_book-info.scss */
+.book-info-cont .rank {
+  width: 100%;
+  height: 35px;
+}
+/* line 159, ../sass/_book-info.scss */
+.book-info-cont .rank p {
+  line-height: 35px;
+  font-size: 10px;
+  color: #EEDA44;
+  text-shadow: 0px 0px 1px black;
+  display: inline;
+  margin-right: 5px;
+}
+/* line 168, ../sass/_book-info.scss */
+.book-info-cont .back-cont {
+  width: 30%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 171, ../sass/_book-info.scss */
+.book-info-cont .back-cont p {
+  margin: 0 auto;
+  width: 58px;
+  height: 35px;
+  background: url("../../images/back.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 181, ../sass/_book-info.scss */
+.book-info-cont .title-cont {
+  width: 40%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 184, ../sass/_book-info.scss */
+.book-info-cont .title-cont p {
+  margin: 0 auto;
+  height: 35px;
+  background: url("../../images/book-info.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 194, ../sass/_book-info.scss */
+.book-info-cont .share-cont {
+  width: 30%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 197, ../sass/_book-info.scss */
+.book-info-cont .share-cont p {
+  margin: 0 auto;
+  width: 38px;
+  height: 35px;
+  background: url("../../images/share-icon.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 207, ../sass/_book-info.scss */
+.book-info-cont footer {
+  width: 100%;
+  height: 35px;
+  margin-top: 30px;
+  background-color: #0D7E8E;
+}
+/* line 212, ../sass/_book-info.scss */
+.book-info-cont .footer-cont {
+  width: 80%;
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+}
+/* line 217, ../sass/_book-info.scss */
+.book-info-cont .left-wrap {
+  width: 50%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 221, ../sass/_book-info.scss */
+.book-info-cont .left-wrap p {
+  color: #FFF;
+  font-family: memphis;
+  font-size: 15px;
+}
+/* line 227, ../sass/_book-info.scss */
+.book-info-cont .right-wrap {
+  width: 50%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+/* line 232, ../sass/_book-info.scss */
+.book-info-cont .right-wrap p {
+  vertical-align: middle;
+  display: inline;
+  color: #FFF;
+  font-family: roboto_light;
+  font-size: 11px;
+  text-decoration: underline;
+}
+/* line 239, ../sass/_book-info.scss */
+.book-info-cont .right-wrap p:first-child {
+  padding-right: 10px;
+}
+
+/* line 1, ../sass/_share.scss */
+.share-cont {
+  width: 100%;
+  min-height: 100%;
+}
+/* line 4, ../sass/_share.scss */
+.share-cont header {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  display: table;
+  background-color: #0D7E8E;
+  box-shadow: 0px 0px 1px 0px rgba(51, 51, 51, 0.8);
+}
+/* line 11, ../sass/_share.scss */
+.share-cont .main {
+  width: 100%;
+}
+/* line 14, ../sass/_share.scss */
+.share-cont .title {
+  background-color: #FFF;
+  width: 100%;
+  height: 35px;
+  border-bottom: solid 2px #0D7E8E;
+  display: table;
+}
+/* line 19, ../sass/_share.scss */
+.share-cont .title p {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+  font-family: roboto_light;
+  font-weight: bold;
+  color: #35B5E4;
+  font-size: 12px;
+}
+/* line 29, ../sass/_share.scss */
+.share-cont .content {
+  width: 100%;
+  height: 505px;
+  background: #FFF url("../../images/share-bg.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+@media only screen and (min-width: 480px) {
+  /* line 29, ../sass/_share.scss */
+  .share-cont .content {
+    width: 100%;
+    height: 735px;
+  }
+}
+/* line 40, ../sass/_share.scss */
+.share-cont .back-cont {
+  width: 30%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 44, ../sass/_share.scss */
+.share-cont .title-cont {
+  width: 40%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 47, ../sass/_share.scss */
+.share-cont .title-cont p {
+  margin: 0 auto;
+  height: 35px;
+  background: url("../../images/share-title.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 57, ../sass/_share.scss */
+.share-cont .close-cont {
+  width: 30%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 60, ../sass/_share.scss */
+.share-cont .close-cont p {
+  margin: 0 auto;
+  width: 38px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 28px;
+  color: #FFFFFE;
+}
+/* line 68, ../sass/_share.scss */
+.share-cont .hr {
+  border: 0;
+  height: 4px;
+  width: 100%;
+  box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.8);
+  background: #7FBBC4;
   background-image: -webkit-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
   background-image: -moz-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);
   background-image: -ms-linear-gradient(left, #BCDBE0, #BCDBE0, #BCDBE0);

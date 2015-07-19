@@ -1,0 +1,244 @@
+.book-info-cont{
+  width: 100%;
+  min-height: 100%;
+  header{
+    @include size(100%, 15%);
+    position: relative;
+    display: table;
+    background-color: #0D7E8E;
+    box-shadow: 0px 0px 1px 0px rgba(#333, 0.8);
+  }
+  .main{
+    width: 100%;
+    background-color: #FFF;
+  }
+  .book-info{
+    @include size(70%,90px);
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .downloads{
+    @include size(70%, 70px);
+    display: table;
+    margin: 0 auto;
+    border-top: 1px solid #0D7E8E;
+    border-bottom: 1px solid #0D7E8E;
+  }
+  .description-cont, .reviews-cont{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .reviews-cont{
+    padding-top: 0;
+  }
+  .desc-title, .reviews-title{
+    @include size(100%,25px);
+    display: table;
+    p{
+      display: table-cell;
+      vertical-align: bottom;
+      font-family: roboto_bold;
+      color: rgba(#0D7E8E, 0.8);
+      font-size: 11px;
+    }
+  }
+  .rev-cont{
+    width: 100%;
+  }
+  .rev-header{
+    @include size(100%,35px);
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+    text-overflow: ellipsis;
+    p{
+      display: inline;
+    }
+  }
+  p.rev-rank{
+    line-height: 35px;
+    font-size: 14px;
+    color: #EEDA44;
+    display: inline;
+    margin-right: 5px;
+  }
+  p.rev-title{
+    line-height: 35px;
+    font-family: roboto_light;
+    color: #0D7E8E;
+    font-weight: bold;
+    font-size: 13px;
+    padding-left: 5px;
+  }
+  .desc-paragraph{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    p{
+      font-family: roboto_light;
+      color: #0D7E8E;
+      font-size: 16px;
+    }
+  }
+  .rev-paragraph{
+    width: 100%;
+    padding-bottom: 10px;
+    p{
+      font-family: roboto_light;
+      color: #0D7E8E;
+      font-size: 14px;
+    }
+  }
+  .downloads-info{
+    @include size(40%,100%);
+    display: table-cell;
+  }
+  .growth-info{
+    @include size(60%,100%);
+    display: table-cell;
+  }
+  .top-det{
+    @include size(100%,65%);
+    display: table;
+    p{
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      font-family: memphis;
+      font-weight: bold;
+      color: #0D7E8E;
+      font-size: 35px;
+    }
+  }
+  .bottom-det{
+    @include size(100%,35%);
+    display: table;
+    p{
+      @include cell-settings();
+      font-family: roboto_light;
+      color: rgba(#0D7E8E, 0.6);
+      font-size: 13px;
+    }
+  }
+  .image{
+    @include size(35%, 100%);
+    float: left;
+  }
+  .info{
+    @include size(65%, 100%);
+    float: left;
+  }
+  .title{
+    @include size(100%, 30px);
+    p{
+      line-height: 30px;
+      font-family: roboto_bold;
+      color: #0D7E8E;
+      font-size: 18px;
+      overflow: hidden;
+      white-space: nowrap; /* Don't forget this one */
+      text-overflow: ellipsis;
+    }
+  }
+  .author{
+    @include size(100%, 15px);
+    p{
+      line-height: 15px;
+      font-family: roboto_bold;
+      color: #0D7E8E;
+      font-size: 10px;
+      overflow: hidden;
+      white-space: nowrap; /* Don't forget this one */
+      text-overflow: ellipsis;
+    }
+  }
+  .rank{
+    @include size(100%, 35px);
+    p{
+      line-height: 35px;
+      font-size: 10px;
+      color: #EEDA44;
+      text-shadow: 0px 0px 1px rgba(#000, 1);
+      display: inline;
+      margin-right: 5px;
+    }
+  }
+  .back-cont{
+    @include size(30%, 100%);
+    @include cell-settings();
+    p{
+      margin: 0 auto;
+      @include size(58px, 35px);
+      background: url('../../images/back.png') no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
+  }
+  .title-cont{
+    @include size(40%, 100%);
+    @include cell-settings();
+    p{
+      margin: 0 auto;
+      height: 35px;
+      background: url('../../images/book-info.png') no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
+  }
+  .share-cont{
+    @include size(30%, 100%);
+    @include cell-settings();
+    p{
+      margin: 0 auto;
+      @include size(38px, 35px);
+      background: url('../../images/share-icon.png') no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
+  }
+  footer{
+    @include size(100%,35px);
+    margin-top: 30px;
+    background-color: #0D7E8E;
+  }
+  .footer-cont{
+    @include size(80%,100%);
+    display: table;
+    margin: 0 auto;
+  }
+  .left-wrap{
+    @include size(50%,100%);
+    display: table-cell;
+    vertical-align: middle;
+    p{
+      color: #FFF;
+      font-family: memphis;
+      font-size: 15px;
+    }
+  }
+  .right-wrap{
+    @include size(50%,100%);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    p{
+      vertical-align: middle;
+      display: inline;
+      color: #FFF;
+      font-family: roboto_light;
+      font-size: 11px;
+      text-decoration: underline;
+      &:first-child{
+        padding-right: 10px;
+      }
+    }
+  }
+}

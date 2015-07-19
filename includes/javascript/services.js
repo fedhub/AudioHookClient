@@ -2,9 +2,10 @@ var app = angular.module('myapp.services', []);
 
 app.service('books', function(){
 
-    var books;
+    var books = [];
     var filter_by = [];
     var filters_flag = false;
+    var book_info;
 
     this.set_books = function(all_books){
         books = all_books;
@@ -28,6 +29,14 @@ app.service('books', function(){
 
     this.get_filters_flag = function(){
         return filters_flag;
+    };
+
+    this.set_book_info = function(book){
+        book_info = book;
+    };
+
+    this.get_book_info = function(){
+        return book_info;
     };
 
 });

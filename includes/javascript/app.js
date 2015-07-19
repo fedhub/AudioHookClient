@@ -4,11 +4,13 @@ var app = angular.module('myapp', [
     'myapp.browse',
     'myapp.services',
     'myapp.search',
-    'myapp.filters'
+    'myapp.filters',
+    'myapp.book_info',
+    'myapp.share'
 ]);
 
 //var base_url = 'http://audiohook.herokuapp.com';
-var base_url = 'localhost:3000';
+var base_url = 'http://localhost:3000';
 
 app.config(['$routeProvider', function($routeProvider){
 
@@ -46,6 +48,16 @@ app.config(['$routeProvider', function($routeProvider){
         .when('/filters',{
             templateUrl: 'partials/filters.html',
             controller: 'filters',
+            resolve: { resolvedVal: function(){ return; }}}
+        )
+        .when('/book-info',{
+            templateUrl: 'partials/book-info.html',
+            controller: 'book_info',
+            resolve: { resolvedVal: function(){ return; }}}
+        )
+        .when('/share',{
+            templateUrl: 'partials/share.html',
+            controller: 'share',
             resolve: { resolvedVal: function(){ return; }}}
     ).otherwise({redirectTo: '/'});
 

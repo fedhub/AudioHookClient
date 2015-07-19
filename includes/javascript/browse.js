@@ -5,13 +5,19 @@ var app = angular.module('myapp.browse', [
 app.controller('browse', ['$scope', 'books', function($scope, books){
 
     $('html').css('background-color', '#4098A4');
-    if(books.get_books().length == 0)
-        get_all_books($scope, books);
-    if(books.get_filters_flag())
+    get_all_books($scope, books);
+
+    if(books.get_filters_flag()) {
         get_by_filters($scope, books);
+    }
 
     $scope.step_to = function(dest){
         window.location = '#/'+dest;
+    };
+
+    $scope.book_info = function(book){
+        books.set_book_info(book);
+        window.location = '#/book-info';
     };
 
     $scope.search = function(){
@@ -23,10 +29,11 @@ app.controller('browse', ['$scope', 'books', function($scope, books){
 function get_all_books($scope, books){
     var url = base_url + '/get-all-books';
     $.ajax({
-       url: url,
+        url: url,
         type: 'POST'
     }).done(function(res){
         books.set_books(JSON.parse(res));
+        //render_books($scope, books, true);
         var _books = books.get_books();
         $scope.books = _books;
         $scope.$apply();
