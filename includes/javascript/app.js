@@ -9,8 +9,8 @@ var app = angular.module('myapp', [
     'myapp.share'
 ]);
 
-//var base_url = 'http://audiohook.herokuapp.com';
-var base_url = 'http://localhost:3000';
+var base_url = 'http://audiohook.herokuapp.com';
+//var base_url = 'http://localhost:3000';
 
 app.config(['$routeProvider', function($routeProvider){
 
