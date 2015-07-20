@@ -10,7 +10,7 @@
         <section class="content-cont">
             <section class="top-bar">
                 <section class="filter-cont"><p>Filter to: All</p></section>
-                <section class="clear-filter-cont"><p>Clear filters</p></section>
+                <section class="clear-filter-cont"><p ng-click="clear_filters()">Clear filters</p></section>
             </section>
             <section class="book-cont" ng-repeat="book in books" ng-click="book_info(book)">
                 <section class="image"></section>
